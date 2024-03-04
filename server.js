@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
+const lesson1Route = require('./routes')
  
-app.get('/', (req, res) => {
-  res.send("Eduardo");
-});
+app.get('/', lesson1Route);
+
  
 const port = 3000;
 
