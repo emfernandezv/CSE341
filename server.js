@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const lesson1Route = require('./routes')
  
-app.get('/', lesson1Route);
-
+app.use('/',lesson1Route)
  
 const port = 3000;
 
